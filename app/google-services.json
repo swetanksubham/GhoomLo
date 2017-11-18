@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1058364703758",
+    "firebase_url": "https://ghoomlo-76470.firebaseio.com",
+    "project_id": "ghoomlo-76470",
+    "storage_bucket": "ghoomlo-76470.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058364703758:android:fba91195ff0c8b51",
+        "android_client_info": {
+          "package_name": "com.dtechterminal.ankur.ghoomlo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058364703758-qa2e1gdjpe4hfa4q6870qurp4o3lf0a4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dtechterminal.ankur.ghoomlo",
+            "certificate_hash": "462075bce28147bacd269d2d2bd831a36e18bfdd"
+          }
+        },
+        {
+          "client_id": "1058364703758-61r0bkia0hqr16deteivjmd0g2kajqv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEM4oRVoPrO3x_O1jYPW8LB_76oUM2WU0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058364703758-61r0bkia0hqr16deteivjmd0g2kajqv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
