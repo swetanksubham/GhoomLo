@@ -39,7 +39,7 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_page);
         final VideoView simpleVideoView = findViewById(R.id.videoView);
-        simpleVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.a));
+        simpleVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.a1));
         simpleVideoView.start();
         simpleVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -129,7 +129,7 @@ public class LoginPage extends AppCompatActivity {
     public void onResume(){
         super.onResume();
         final VideoView simpleVideoView = findViewById(R.id.videoView);
-        simpleVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.a));
+        simpleVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.a1));
         simpleVideoView.start();
         simpleVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
