@@ -70,7 +70,7 @@ public class BusBooking extends AppCompatActivity {
             Toast.makeText(this, "Please fill the required fields!!", Toast.LENGTH_SHORT).show();
         else {
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setMessage("Your Booking is confirmed on the Date:" + date.getText().toString() + " From:" + source.getText().toString() + " To: " + destination.getText().toString() + "! We hope you'll have an amazing trip! :)");
+            alertDialogBuilder.setMessage("Your Booking is confirmed for the Date:" + date.getText().toString() + " From:" + source.getText().toString() + " To: " + destination.getText().toString() + "! And the seat number is: B3. We hope you'll have an amazing trip! :)");
             alertDialogBuilder.setPositiveButton("Okay!",
                     new DialogInterface.OnClickListener() {
                         @Override
