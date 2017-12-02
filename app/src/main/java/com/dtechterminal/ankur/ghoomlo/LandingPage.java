@@ -14,19 +14,13 @@ public class LandingPage extends AppCompatActivity {
         setContentView(R.layout.landing_page);
     }
     public void busfun(View view) {
-        Intent BUS = new Intent(this,BusBooking.class);
-        startActivity(BUS);
+        startActivity(new Intent(this,BusBooking.class));
     }
     public void carfun(View view) {
-        Intent CAR = new Intent(this,CarBooking.class);
-        startActivity(CAR);
+        startActivity(new Intent(this,CarBooking.class));
     }
-    public void pkgfun(View view) {
-        Intent PKG = new Intent(this,PackageBooking.class);
-        startActivity(PKG);
-    }
+    public void pkgfun(View view) {startActivity(new Intent(this,PackageBooking.class));}
     public void trainfun(View view) {
-        Intent TRAIN = new Intent(this,TrainBooking.class);
-        startActivity(TRAIN);
+        startActivity(new Intent(this,TrainBooking.class));
     }
 }

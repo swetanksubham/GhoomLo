@@ -110,8 +110,7 @@ public class LoginPage extends AppCompatActivity {
                 firebaseAuthWithGoogle(account);
                 Toast.makeText(LoginPage.this, "Welcome!!",
                         Toast.LENGTH_SHORT).show();
-                Intent LP = new Intent(this,LandingPage.class);
-                startActivity(LP);
+                startActivity(new Intent(this,LandingPage.class));
 
             } else {
                 // Google Sign In failed, update UI appropriately

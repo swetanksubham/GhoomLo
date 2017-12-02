@@ -1,33 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dtechterminal.ankur.ghoomlo.BusBooking">
+    android:background="#303F9F"
+    tools:context="com.dtechterminal.ankur.ghoomlo.CarBooking"
+    tools:layout_editor_absoluteY="25dp">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppBarOverlay">
+    <Button
+        android:id="@+id/book"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="112dp"
+        android:background="#CDDC39"
+        android:text="Book"
+        android:onClick="fnlbook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/PopupOverlay" />
+    <EditText
+        android:id="@+id/source"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="16dp"
+        android:background="#BDBDBD"
+        android:ems="10"
+        android:hint="Where From?"
+        android:inputType="textMultiLine|textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/destination"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    </android.support.design.widget.AppBarLayout>
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="19dp"
+        android:background="#BDBDBD"
+        android:ems="10"
+        android:hint="Where to?"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/source"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <include layout="@layout/content_bus_booking" />
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="109dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:background="#CDDC39"
+        android:onClick="swtchsds"
+        android:text="Switch Sides"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/source" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="BUS BOOKING"
+        android:textAlignment="center"
+        android:textColor="#BDBDBD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/source"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        android:background="#BDBDBD"
+        android:ems="10"
+        android:hint="On which date?"
+        android:inputType="date"
+        android:onClick="addDatepicker"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+</android.support.constraint.ConstraintLayout>

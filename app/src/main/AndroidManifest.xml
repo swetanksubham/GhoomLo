@@ -25,20 +25,20 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".LandingPage" />
+        <activity android:name=".LandingPage" android:noHistory="true" />
         <activity
             android:name=".BusBooking"
             android:label="@string/title_activity_bus_booking"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".TrainBooking" />
+        <activity android:name=".TrainBooking" android:noHistory="true"/>
         <activity
             android:name=".PackageBooking"
             android:label="@string/title_activity_package_booking"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:noHistory="true" />
         <activity
             android:name=".CarBooking"
             android:label="@string/title_activity_car_booking"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+             android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:noHistory="true"></activity>
     </application>
 
 </manifest>
